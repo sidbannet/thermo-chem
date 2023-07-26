@@ -23,7 +23,7 @@ setuptools_info = {
 	'zip_safe': False,
 	'url': 'https://github.com/VlachosGroup/pmutt',
 	'packages': setuptools.find_packages(),
-	'package_data': {'':['*.xlsx', '*.log', '*OUTCAR']},
+	'package_data': {'': ['*.xlsx', '*.log', '*OUTCAR']},
 	'install_requires': [
 		'ASE>=3.22.1',
 		'matplotlib>=3.5.0',
@@ -36,16 +36,16 @@ setuptools_info = {
 		'pygal>=2.4.0',
 		'xlrd>=1.2.0',
 		'more_itertools>=8.14.0',
-	    'PyYAML>=6.0.0'
-		],
+		'PyYAML>=6.0.0',
+	],
 	'classifiers': [
 		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 		"Intended Audience :: Science/Research",
 		"Topic :: Scientific/Engineering :: Chemistry",
-	    ],
-    }
+	],
+}
 
 if sys.version_info[0] >= 3:
 	#
