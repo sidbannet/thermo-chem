@@ -1,8 +1,8 @@
 import unittest
 import numpy as np
 from ase.build import molecule
-from pmutt.statmech import StatMech, presets
-from pmutt.empirical.nasa import Nasa9, SingleNasa9
+from sycamore.physics.pmutt.statmech import StatMech, presets
+from sycamore.physics.pmutt.empirical.nasa import Nasa9, SingleNasa9
 
 
 class TestNasa(unittest.TestCase):

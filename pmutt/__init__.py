@@ -9,21 +9,19 @@ pmutt
 # and it's best-practices to have the __version__
 # present, too:
 #
-name = 'pmutt'
-__version__ = '1.4.5'
-
 import os
 import inspect
-import itertools
 import re
 from warnings import warn
 
 import numpy as np
-import pygal
 from matplotlib import pyplot as plt
 
-from pmutt import constants as c
-from pmutt.io.json import remove_class
+from . import constants as c
+from .io.json import remove_class
+
+name = 'pmutt'
+__version__ = '2.0.0'
 
 
 class _pmuttBase:
@@ -72,19 +70,19 @@ class _pmuttBase:
 
 class _ModelBase(_pmuttBase):
     """Generic parent class to all model type objects. Functionality:
-    
+
     - Methods that return the dimensional thermodynamic quantity
       (e.g. ``get_H``)
     - Methods to calculate Helmholtz energy and Gibbs energy (i.e. ``get_FoRT``,
       ``get_F``, ``get_GoRT``, ``get_G``)
-      
+
     Inherits from :class:`~pmutt._pmuttBase`"""
     def __init__(self):
         pass
 
     def get_q(self):
         """Default method to calculate the partition coefficient.
-        
+
         Returns
         -------
             q : float
@@ -95,7 +93,7 @@ class _ModelBase(_pmuttBase):
     def get_CvoR(self):
         """Default method to calculate the dimensionless heat capacity at
         constant volume.
-        
+
         Returns
         -------
             CvoR : float
@@ -123,7 +121,7 @@ class _ModelBase(_pmuttBase):
     def get_CpoR(self):
         """Default method to calculate the dimensionless heat capacity at
         constant pressure.
-        
+
         Returns
         -------
             CpoR : float
@@ -151,7 +149,7 @@ class _ModelBase(_pmuttBase):
 
     def get_UoRT(self):
         """Default method to calculate the dimensionless internal energy.
-        
+
         Returns
         -------
             UoRT : float
@@ -185,7 +183,7 @@ class _ModelBase(_pmuttBase):
 
     def get_HoRT(self):
         """Default method to calculate the dimensionless enthalpy.
-        
+
         Returns
         -------
             HoRT : float
@@ -223,7 +221,7 @@ class _ModelBase(_pmuttBase):
 
     def get_SoR(self):
         """Default method to calculate the dimensionless entropy.
-        
+
         Returns
         -------
             SoR : float
@@ -377,8 +375,8 @@ def plot_1D(obj,
         ax : (N,) list of `matplotlib.axes.Axes.axis`_
             Axes of the plots.
 
-    .. _`matplotlib.figure.Figure`: https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html
-    .. _`matplotlib.axes.Axes.axis`: https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html
+    .. _`matplotlib.figure.Figure`: https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html  # noqa: E501
+    .. _`matplotlib.axes.Axes.axis`: https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html # noqa: E501
     """
 
     # Check if single method passed
@@ -398,13 +396,6 @@ def plot_1D(obj,
         # Force ax to be a list
         if nrows * ncols == 1:
             ax = [ax]
-    elif viewer == 'pygal':
-        graph = pygal.XY(x_title=x_name,
-                         y_title=methods[0].replace('get_', ''),
-                         pretty_print=True,
-                         show_y_guides=False,
-                         show_x_guides=False,
-                         include_x_axis=True)
         if len(methods) != 1:
             err_msg = ('Currently, viewer {} only supports a single method.'
                        ''.format(viewer))
@@ -429,14 +420,8 @@ def plot_1D(obj,
             ax[i].plot(x_values, y)
             ax[i].set_xlabel(x_name)
             ax[i].set_ylabel(method.replace('get_', ''))
-        elif viewer == 'pygal':
-            # Format data for graph
-            data = [(x_val, y_val) for x_val, y_val in zip(x_values, y)]
-            graph.add(obj.name, data)
     if viewer == 'matplotlib':
         return (figure, ax)
-    elif viewer == 'pygal':
-        return graph
 
 
 def plot_2D(obj,
@@ -488,10 +473,10 @@ def plot_2D(obj,
         cbar : (N,) list of `matplotlib.colorbar.Colorbar`_
             Colorbar for plots
 
-    .. _`matplotlib.figure.Figure`: https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html
-    .. _`matplotlib.axes.Axes.axis`: https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html
-    .. _`matplotlib.collections.QuadMesh`: https://matplotlib.org/3.1.0/api/collections_api.html#matplotlib.collections.QuadMesh
-    .. _`matplotlib.colorbar.Colorbar`: https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.colorbar.html
+    .. _`matplotlib.figure.Figure`: https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html  # noqa: E501
+    .. _`matplotlib.axes.Axes.axis`: https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html  # noqa: E501
+    .. _`matplotlib.collections.QuadMesh`: https://matplotlib.org/3.1.0/api/collections_api.html#matplotlib.collections.QuadMesh  # noqa: E501
+    .. _`matplotlib.colorbar.Colorbar`: https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.colorbar.html  # noqa: E501
 
     """
 
@@ -869,7 +854,7 @@ def format_conditions(**kwargs):
 
 def _get_mass_unit(units):
     """Determine the mass units present
-    
+
     Parameters
     ----------
         units : str
@@ -877,7 +862,7 @@ def _get_mass_unit(units):
     Returns
     -------
         mass_units : str
-            Mass units    
+            Mass units
     """
     units_sep = units.split('/')
     for unit in units_sep:
@@ -893,7 +878,7 @@ def _get_mass_unit(units):
 
 def _get_R_adj(units, elements=None):
     """Get adjustment to mass when converting from mol to g
-    
+
     Parameters
     ----------
         units : str
@@ -975,7 +960,7 @@ def run_tests(python_command='python',
               failfast=False,
               verbose=False):
     """Run unit tests.
-    
+
     Parameters
     ----------
         python_command : str

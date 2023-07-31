@@ -4,8 +4,8 @@ pmutt.test_pmutt_model_statmech
 Tests for pmutt module
 """
 import unittest
-from pmutt import constants as c
-from pmutt.eos import IdealGasEOS, vanDerWaalsEOS
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.eos import IdealGasEOS, vanDerWaalsEOS
 
 
 class TestIdealGas(unittest.TestCase):

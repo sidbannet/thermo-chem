@@ -1,8 +1,6 @@
-import more_itertools as mit
-
-from pmutt import constants as c
-from pmutt.cantera import _get_omkm_range
-from pmutt.io.cantera import obj_to_cti
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.cantera import _get_omkm_range
+from sycamore.physics.pmutt.io.cantera import obj_to_cti
 
 
 class Phase:
@@ -28,7 +26,7 @@ class Phase:
             Note about the phase. Default is None.
         elements : set
             Not supplied during initialization. Attribute derived from
-            ``species`` attribute.        
+            ``species`` attribute.
     """
     def __init__(self,
                  name,
@@ -351,7 +349,8 @@ class StoichSolid(Phase):
         # Terminate the string
         cti_str = '{})\n'.format(cti_str[:-2])
         return cti_str
-    
+
+
 def _filter_reactions(reactions, phase_name):
     """Helper method to remove reactions that occur in multiple phases. Required
     for IdealGas and StoichSolid

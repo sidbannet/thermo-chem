@@ -4,10 +4,10 @@ pmutt.test_pmutt_model_reaction_bep
 Tests for pmutt module
 """
 import unittest
-from pmutt import constants as c
-from pmutt.reaction import Reaction
-from pmutt.reaction.bep import BEP
-from pmutt.statmech import StatMech, presets
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.reaction import Reaction
+from sycamore.physics.pmutt.reaction.bep import BEP
+from sycamore.physics.pmutt.statmech import StatMech, presets
 
 
 class TestBEP(unittest.TestCase):

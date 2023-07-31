@@ -3,11 +3,11 @@
 import numpy as np
 from ase.build import molecule
 
-from pmutt.empirical.nasa import Nasa
-from pmutt.empirical.references import Reference, References
-from pmutt.empirical.shomate import Shomate
-from pmutt.reaction import Reaction, Reactions
-from pmutt.statmech import StatMech, presets
+from sycamore.physics.pmutt.empirical.nasa import Nasa
+from sycamore.physics.pmutt.empirical.references import Reference, References
+from sycamore.physics.pmutt.empirical.shomate import Shomate
+from sycamore.physics.pmutt.reaction import Reaction
+from sycamore.physics.pmutt.statmech import StatMech, presets
 
 O2_nasa = Nasa(name='O2',
                T_low=200.,

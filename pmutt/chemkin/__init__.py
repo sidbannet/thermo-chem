@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from pmutt import _pmuttBase
-from pmutt.io.json import remove_class
+from sycamore.physics.pmutt import _pmuttBase
 
 
 class CatSite(_pmuttBase):

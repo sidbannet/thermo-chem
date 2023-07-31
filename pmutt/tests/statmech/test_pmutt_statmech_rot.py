@@ -7,7 +7,7 @@ import unittest
 import numpy as np
 from ase import Atoms
 from ase.build import molecule
-from pmutt.statmech import rot
+from sycamore.physics.pmutt.statmech import rot
 
 
 class TestRigidRotor(unittest.TestCase):

@@ -7,7 +7,7 @@ Created on Wed Mar 8 2023
 import unittest
 import numpy.testing as npt
 import numpy as np
-from pmutt import equilibrium
+from sycamore.physics.pmutt import equilibrium
 
 
 class TestExamples(unittest.TestCase):

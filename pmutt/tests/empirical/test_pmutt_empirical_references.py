@@ -7,9 +7,9 @@ Created on Mon Jul 9 5:00:00 2018
 import unittest
 import numpy as np
 from ase.build import molecule
-from pmutt import constants as c
-from pmutt.empirical.references import References, Reference
-from pmutt.statmech import StatMech, trans, rot, vib, elec
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.empirical.references import References, Reference
+from sycamore.physics.pmutt.statmech import StatMech, trans, rot, vib, elec
 
 
 class TestReferences(unittest.TestCase):

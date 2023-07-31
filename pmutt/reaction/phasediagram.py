@@ -3,9 +3,9 @@ import matplotlib
 import numpy as np
 from matplotlib import pyplot as plt
 
-from pmutt import constants as c
-from pmutt.io.json import json_to_pmutt, remove_class
-from pmutt.reaction import Reactions
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics.pmutt.reaction import Reactions
 
 
 class PhaseDiagram(Reactions):

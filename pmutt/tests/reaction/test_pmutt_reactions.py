@@ -5,10 +5,10 @@ Tests for pmutt module
 """
 
 import unittest
-from pmutt import constants as c
-from pmutt.statmech import StatMech, presets
-from pmutt.empirical.nasa import Nasa
-from pmutt.reaction import Reaction, Reactions
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.statmech import StatMech, presets
+from sycamore.physics.pmutt.empirical.nasa import Nasa
+from sycamore.physics.pmutt.reaction import Reaction, Reactions
 
 
 class TestReactions(unittest.TestCase):

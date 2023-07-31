@@ -6,10 +6,10 @@ Tests for pmutt module
 import unittest
 import numpy as np
 from ase.build import molecule
-from pmutt import constants as c
-from pmutt import reaction as rxn
-from pmutt.empirical.nasa import Nasa
-from pmutt.statmech import StatMech, presets
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt import reaction as rxn
+from sycamore.physics.pmutt.empirical.nasa import Nasa
+from sycamore.physics.pmutt.statmech import StatMech, presets
 
 
 class TestReaction(unittest.TestCase):

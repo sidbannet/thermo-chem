@@ -4,7 +4,7 @@ from collections import namedtuple
 
 import pandas as pd
 
-from pmutt import cantera
+from sycamore.physics.pmutt import cantera
 
 
 class TestCantera(unittest.TestCase):

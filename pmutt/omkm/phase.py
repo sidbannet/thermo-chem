@@ -1,7 +1,7 @@
-from pmutt import constants as c
-from pmutt.cantera import _get_omkm_range
-from pmutt.omkm import _Param, _assign_yaml_val
-import pmutt.cantera.phase as phase_cantera
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.cantera import _get_omkm_range
+from sycamore.physics.pmutt.omkm import _Param, _assign_yaml_val
+import sycamore.physics.pmutt.cantera.phase as phase_cantera
 
 
 class IdealGas(phase_cantera.IdealGas):
@@ -57,9 +57,10 @@ class IdealGas(phase_cantera.IdealGas):
             yaml_dict['reactions'] = 'all'
         return yaml_dict
 
+
 class StoichSolid(phase_cantera.StoichSolid):
     """OpenMKM implementation of the stoichiometric solid phase. Currently there
-    are no differences between this class and 
+    are no differences between this class and
     :class:`~pmutt.cantera.phase.StoichSolid` but one could add changes here in
     the future if necessary.
     """
@@ -326,7 +327,6 @@ class InteractingInterface(phase_cantera.Phase):
                    /c.convert_unit(initial='cm2', final=area_unit)
         site_den_param = _Param('site-density', site_den, '_quantity/_length^2')
         _assign_yaml_val(site_den_param, yaml_dict, units)
-
 
         '''Assign thermo depending on presence of lateral interactions'''
         if self.interactions is None or len(self.interactions) == 0:

@@ -15,9 +15,10 @@ _Param = namedtuple('_Param', 'label val units')
             e.g. '_length3/_time' for the volumetric flow rate.
 """
 
+
 def _assign_yaml_val(param, header, units=None):
     """Helper method to assign label to header
-    
+
     Parameters
     ----------
         param : _Param namedtuple

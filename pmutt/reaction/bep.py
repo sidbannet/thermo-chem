@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from pmutt import _ModelBase
-from pmutt import constants as c
-from pmutt.io.json import remove_class
+from sycamore.physics.pmutt import _ModelBase
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.io.json import remove_class
 
 
 class BEP(_ModelBase):
@@ -41,7 +41,7 @@ class BEP(_ModelBase):
             values in a formula unit.
             e.g. CH3OH can be represented as:
             {'C': 1, 'H': 4, 'O': 1,}.
-    
+
         notes : str or dict
             Notes relevant to BEP relationship such as its source. If using a
             dictionary, the keys and values must be simple types supported by
@@ -189,7 +189,7 @@ class BEP(_ModelBase):
     def get_UoRT(self, reaction, T=c.T0('K'), **kwargs):
         """Calculates the dimensionless internal energy using BEP relationship
         and initial state internal energy
-        
+
         Parameters
         ----------
             reaction : :class:`~pmutt.reaction.Reaction` object
@@ -212,7 +212,7 @@ class BEP(_ModelBase):
     def get_HoRT(self, reaction, T=c.T0('K'), **kwargs):
         """Calculates the dimensionless enthalpy using BEP relationship
         and reactants or products enthalpy
-        
+
         Parameters
         ----------
             reaction : :class:`~pmutt.reaction.Reaction` object
@@ -239,7 +239,7 @@ class BEP(_ModelBase):
                 **kwargs):
         """Calculates the dimensionless entropy using reactants or products
         entropy. The BEP relationship has no entropic contribution
-        
+
         Parameters
         ----------
             reaction : :class:`~pmutt.reaction.Reaction` object, optional
@@ -284,7 +284,7 @@ class BEP(_ModelBase):
         """Calculates the dimensionless Gibbs energy using BEP relationship
         and reactants Gibbs energy. The BEP relationship has no entropic
         contribution
-        
+
         Parameters
         ----------
             reaction : :class:`~pmutt.reaction.Reaction` object

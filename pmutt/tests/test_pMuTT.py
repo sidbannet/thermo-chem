@@ -8,7 +8,7 @@ Created on Fri Jul 7 12:31:00 2018
 import os
 import unittest
 import pandas as pd
-import pmutt
+from sycamore.physics import pmutt as pmutt
 
 
 class Testpmutt(unittest.TestCase):

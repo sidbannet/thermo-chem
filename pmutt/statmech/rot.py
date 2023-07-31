@@ -5,9 +5,9 @@ from warnings import warn
 
 import numpy as np
 
-from pmutt import _ModelBase
-from pmutt import constants as c
-from pmutt.io.json import remove_class
+from sycamore.physics.pmutt import _ModelBase
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.io.json import remove_class
 
 
 class RigidRotor(_ModelBase):

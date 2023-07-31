@@ -7,9 +7,9 @@ import unittest
 import numpy as np
 from ase.build import molecule
 from ase.thermochemistry import IdealGasThermo
-from pmutt import get_molecular_weight
-from pmutt import constants as c
-from pmutt.statmech import trans, rot, elec, vib, StatMech
+from sycamore.physics.pmutt import get_molecular_weight
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.statmech import trans, rot, elec, vib, StatMech
 
 
 class TestStatMech(unittest.TestCase):

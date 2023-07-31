@@ -4,7 +4,7 @@ Tests for pmutt.io.thermdat module
 Created on Fri Jul 7 12:31:00 2018
 """
 import unittest
-import pmutt.io.thermdat as thermdat
+import sycamore.physics.pmutt.io.thermdat as thermdat
 import numpy as np
 
 

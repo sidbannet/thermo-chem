@@ -7,8 +7,10 @@ Created on Fri Feb 8 14:30:00 2018
 
 import numpy as np
 
-from pmutt import (_apply_numpy_operation, _get_mode_quantity,
-                   _get_specie_kwargs)
+from sycamore.physics.pmutt import (
+    _get_mode_quantity,
+    _get_specie_kwargs,
+)
 
 
 def _get_mix_quantity(misc_models,
@@ -45,7 +47,7 @@ def _get_mix_quantity(misc_models,
             Mixing quantity of interest. If verbose is True, each element
             corresponds to the contribution of each mix_model
 
-    .. _`numpy.ndarray`: https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html
+    .. _`numpy.ndarray`: https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html  # noqa: E501
     """
     # Return default value if no mixture models exist
     if misc_models is None:

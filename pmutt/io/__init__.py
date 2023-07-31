@@ -7,12 +7,12 @@ Created on Fri Jul 7 12:40:00 2018
 
 import datetime
 
-import pmutt
+from sycamore.physics import pmutt as pmutt
 
 
 def _get_file_timestamp(comment_char=''):
     """Writes a comment indicating when the file was written by pmutt
-    
+
     Parameters
     ----------
         comment_char : str, optional

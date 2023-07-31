@@ -5,8 +5,8 @@ Tests for pmutt module
 """
 import unittest
 import numpy as np
-from pmutt import constants as c
-from pmutt.statmech import vib
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.statmech import vib
 
 
 class TestHarmonicVib(unittest.TestCase):

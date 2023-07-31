@@ -7,14 +7,14 @@ Created on Thurs Feb 7 10:15:00 2019
 
 import numpy as np
 
-from pmutt import _ModelBase
-from pmutt import constants as c
-from pmutt.omkm import _Param, _assign_yaml_val
-from pmutt.io.json import remove_class
+from sycamore.physics.pmutt import _ModelBase
+from sycamore.physics.pmutt import constants as c
+from sycamore.physics.pmutt.omkm import _Param, _assign_yaml_val
+from sycamore.physics.pmutt.io.json import remove_class
 
 
 class PiecewiseCovEffect(_ModelBase):
-    """Models enthalpic contribution to coverage effect between two species 
+    """Models enthalpic contribution to coverage effect between two species
     using piecewise linear functions
 
     Attributes
@@ -232,7 +232,6 @@ class PiecewiseCovEffect(_ModelBase):
         _assign_yaml_val(strength_param, yaml_dict, units)
         yaml_dict['id'] = self.name
         return yaml_dict
-
 
     def to_dict(self):
         """Represents object as dictionary with JSON-accepted datatypes

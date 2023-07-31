@@ -5,7 +5,7 @@ Tests for pmutt module
 """
 import unittest
 import numpy as np
-from pmutt.statmech import elec
+from sycamore.physics.pmutt.statmech import elec
 
 
 class TestGroundStateElec(unittest.TestCase):

@@ -3,7 +3,7 @@ import more_itertools as mit
 
 def _get_omkm_range(objs, parent_obj=None, delimiter='_', format='str'):
     """Returns the objs IDs
-    
+
     Parameters
     ----------
         objs : list
