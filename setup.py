@@ -30,12 +30,6 @@ setuptools_info = {
 		'numpy>=1.21.0',
 		'scipy>=1.7.0',
 		'pandas>=1.1.0',
-		'pymongo>=3.2.0',
-		'dnspython>=1.16.0',
-		'networkx>=2.6.0',
-		'pygal>=2.4.0',
-		'xlrd>=1.2.0',
-		'more_itertools>=8.14.0',
 	    'PyYAML>=6.0.0'
 		],
 	'classifiers': [
