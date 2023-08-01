@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from sycamore.physics.pmutt import _ModelBase
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.io.json import remove_class
+from sycamore.physics._pmutt import _ModelBase
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.io.json import remove_class
 
 
 class BEP(_ModelBase):

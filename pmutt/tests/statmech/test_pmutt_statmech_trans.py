@@ -5,7 +5,7 @@ Tests for pmutt module
 """
 import unittest
 import numpy as np
-from sycamore.physics.pmutt.statmech import trans
+from sycamore.physics._pmutt.statmech import trans
 
 
 class TestFreeTrans(unittest.TestCase):

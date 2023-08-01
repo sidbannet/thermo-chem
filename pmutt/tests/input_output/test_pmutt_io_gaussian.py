@@ -1,7 +1,7 @@
 import unittest
 import os
 import numpy as np
-from sycamore.physics.pmutt.io import gaussian
+from sycamore.physics._pmutt.io import gaussian
 
 test_file = os.path.join(os.path.dirname(__file__), 'test_gaussian.log')
 

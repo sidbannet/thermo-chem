@@ -7,10 +7,10 @@ Created on Thurs Feb 7 10:15:00 2019
 
 import numpy as np
 
-from sycamore.physics.pmutt import _ModelBase
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.omkm import _Param, _assign_yaml_val
-from sycamore.physics.pmutt.io.json import remove_class
+from sycamore.physics._pmutt import _ModelBase
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.omkm import _Param, _assign_yaml_val
+from sycamore.physics._pmutt.io.json import remove_class
 
 
 class PiecewiseCovEffect(_ModelBase):

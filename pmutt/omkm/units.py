@@ -1,4 +1,4 @@
-import sycamore.physics.pmutt.cantera.units as cantera_units
+import sycamore.physics._pmutt.cantera.units as cantera_units
 
 
 class Units(cantera_units.Units):

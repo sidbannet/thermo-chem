@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from warnings import warn
 
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt import _force_pass_arguments, _ModelBase
-from sycamore.physics.pmutt.statmech import StatMech, ConstantMode, presets
-from sycamore.physics.pmutt.reaction import Reaction
-from sycamore.physics.pmutt.io.json import remove_class, json_to_pmutt
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import _force_pass_arguments, _ModelBase
+from sycamore.physics._pmutt.statmech import StatMech, ConstantMode, presets
+from sycamore.physics._pmutt.reaction import Reaction
+from sycamore.physics._pmutt.io.json import remove_class, json_to_pmutt
 
 
 class LSR(_ModelBase):

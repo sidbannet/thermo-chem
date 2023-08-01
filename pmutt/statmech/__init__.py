@@ -9,14 +9,14 @@ from copy import copy
 
 import numpy as np
 
-from sycamore.physics.pmutt import (_apply_numpy_operation, _get_mode_quantity, _get_R_adj,
+from sycamore.physics._pmutt import (_apply_numpy_operation, _get_mode_quantity, _get_R_adj,
                    _get_specie_kwargs, _is_iterable, _ModelBase,
                    _pass_expected_arguments, _check_obj, _check_iterable_attr)
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt import parse_formula
-from sycamore.physics.pmutt.io import json as json_pmutt
-from sycamore.physics.pmutt.mixture import _get_mix_quantity
-from sycamore.physics.pmutt.statmech import elec, rot, trans, vib
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import parse_formula
+from sycamore.physics._pmutt.io import json as json_pmutt
+from sycamore.physics._pmutt.mixture import _get_mix_quantity
+from sycamore.physics._pmutt.statmech import elec, rot, trans, vib
 
 
 class EmptyMode(_ModelBase):

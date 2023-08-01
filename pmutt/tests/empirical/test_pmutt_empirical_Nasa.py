@@ -1,10 +1,10 @@
 import unittest
 import numpy as np
 from ase.build import molecule
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt import get_molecular_weight
-from sycamore.physics.pmutt.statmech import StatMech, trans, rot, vib, elec
-from sycamore.physics.pmutt.empirical.nasa import Nasa
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import get_molecular_weight
+from sycamore.physics._pmutt.statmech import StatMech, trans, rot, vib, elec
+from sycamore.physics._pmutt.empirical.nasa import Nasa
 
 
 class TestNasa(unittest.TestCase):

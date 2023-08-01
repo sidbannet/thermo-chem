@@ -1,6 +1,6 @@
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.cantera import _get_omkm_range
-from sycamore.physics.pmutt.io.cantera import obj_to_cti
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.cantera import _get_omkm_range
+from sycamore.physics._pmutt.io.cantera import obj_to_cti
 
 
 class Phase:

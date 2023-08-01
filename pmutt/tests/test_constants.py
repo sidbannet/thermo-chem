@@ -10,7 +10,7 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from sycamore.physics.pmutt import constants as c
+from sycamore.physics._pmutt import constants as c
 
 
 class TestConstants(unittest.TestCase):

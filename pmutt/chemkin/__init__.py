@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from sycamore.physics.pmutt import _pmuttBase
+from sycamore.physics._pmutt import _pmuttBase
 
 
 class CatSite(_pmuttBase):

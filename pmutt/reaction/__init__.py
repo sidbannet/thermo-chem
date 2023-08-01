@@ -9,13 +9,13 @@ import numpy as np
 from matplotlib import pyplot as plt
 from scipy import interpolate
 
-from sycamore.physics.pmutt import (_apply_numpy_operation, _force_pass_arguments,
+from sycamore.physics._pmutt import (_apply_numpy_operation, _force_pass_arguments,
                    _get_specie_kwargs, _is_iterable, _pass_expected_arguments,
                    _pmuttBase, _check_iterable_attr)
-from sycamore.physics.pmutt import pmutt_list_to_dict
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.io.json import json_to_pmutt, remove_class
-from sycamore.physics.pmutt.reaction.bep import BEP
+from sycamore.physics._pmutt import pmutt_list_to_dict
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics._pmutt.reaction.bep import BEP
 
 
 class Reaction(_pmuttBase):

@@ -4,7 +4,7 @@ pmutt.test_pmutt_model_statmech_nucl
 Tests for pmutt module
 """
 import unittest
-from sycamore.physics.pmutt.statmech import nucl
+from sycamore.physics._pmutt.statmech import nucl
 
 
 class TestEmptyNucl(unittest.TestCase):

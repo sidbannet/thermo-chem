@@ -7,8 +7,8 @@ Created on Fri Jul 7 12:31:00 2018
 import unittest
 import numpy as np
 from ase.build import molecule
-from sycamore.physics.pmutt.statmech import StatMech, presets
-from sycamore.physics.pmutt.empirical import EmpiricalBase, GasPressureAdj
+from sycamore.physics._pmutt.statmech import StatMech, presets
+from sycamore.physics._pmutt.empirical import EmpiricalBase, GasPressureAdj
 
 
 class TestEmpiricalBase(unittest.TestCase):

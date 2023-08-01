@@ -2,10 +2,10 @@
 
 import numpy as np
 
-from sycamore.physics.pmutt import _ModelBase
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt import get_molecular_weight
-from sycamore.physics.pmutt.io.json import remove_class
+from sycamore.physics._pmutt import _ModelBase
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import get_molecular_weight
+from sycamore.physics._pmutt.io.json import remove_class
 
 
 class FreeTrans(_ModelBase):

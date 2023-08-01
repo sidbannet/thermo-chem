@@ -6,11 +6,11 @@ Tests for pmutt module
 import unittest
 import numpy as np
 from pprint import pprint
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.reaction import Reaction
-from sycamore.physics.pmutt.empirical.shomate import Shomate
-from sycamore.physics.pmutt.statmech.lsr import LSR
-from sycamore.physics.pmutt.statmech import StatMech, presets
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.reaction import Reaction
+from sycamore.physics._pmutt.empirical.shomate import Shomate
+from sycamore.physics._pmutt.statmech.lsr import LSR
+from sycamore.physics._pmutt.statmech import StatMech, presets
 
 
 class TestLSR(unittest.TestCase):

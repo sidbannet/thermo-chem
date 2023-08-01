@@ -7,7 +7,7 @@ Created on Fri Feb 8 14:30:00 2018
 
 import numpy as np
 
-from sycamore.physics.pmutt import (
+from sycamore.physics._pmutt import (
     _get_mode_quantity,
     _get_specie_kwargs,
 )

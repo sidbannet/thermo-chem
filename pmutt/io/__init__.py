@@ -7,7 +7,7 @@ Created on Fri Jul 7 12:40:00 2018
 
 import datetime
 
-from sycamore.physics import pmutt as pmutt
+from sycamore.physics import _pmutt as pmutt
 
 
 def _get_file_timestamp(comment_char=''):

@@ -1,7 +1,7 @@
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.cantera import _get_omkm_range
-from sycamore.physics.pmutt.omkm import _Param, _assign_yaml_val
-import sycamore.physics.pmutt.cantera.phase as phase_cantera
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.cantera import _get_omkm_range
+from sycamore.physics._pmutt.omkm import _Param, _assign_yaml_val
+import sycamore.physics._pmutt.cantera.phase as phase_cantera
 
 
 class IdealGas(phase_cantera.IdealGas):

@@ -1,15 +1,15 @@
 import numpy as np
 import more_itertools as mit
 
-from sycamore.physics.pmutt import _apply_numpy_operation
-from sycamore.physics.pmutt import constants as c
-from sycamore.physics.pmutt.cantera import _get_omkm_range
-from sycamore.physics.pmutt.cantera.phase import IdealGas
-from sycamore.physics.pmutt.omkm.phase import InteractingInterface, StoichSolid
-from sycamore.physics.pmutt.omkm.units import Units
-from sycamore.physics.pmutt.reaction import Reaction
-from sycamore.physics.pmutt.reaction.bep import BEP as BEP_parent
-from sycamore.physics.pmutt.omkm import _Param, _assign_yaml_val
+from sycamore.physics._pmutt import _apply_numpy_operation
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.cantera import _get_omkm_range
+from sycamore.physics._pmutt.cantera.phase import IdealGas
+from sycamore.physics._pmutt.omkm.phase import InteractingInterface, StoichSolid
+from sycamore.physics._pmutt.omkm.units import Units
+from sycamore.physics._pmutt.reaction import Reaction
+from sycamore.physics._pmutt.reaction.bep import BEP as BEP_parent
+from sycamore.physics._pmutt.omkm import _Param, _assign_yaml_val
 
 
 class SurfaceReaction(Reaction):
