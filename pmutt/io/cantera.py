@@ -1,4 +1,4 @@
-from pmutt import constants as c
+from sycamore.physics._pmutt import constants as c
 
 
 def obj_to_cti(obj, line_len=80, max_line_len=80, **kwargs):

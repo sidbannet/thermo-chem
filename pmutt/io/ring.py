@@ -1,4 +1,4 @@
-from pmutt.reaction import Reaction, Reactions
+from sycamore.physics._pmutt.reaction import Reaction, Reactions
 
 
 def read_reactions(filename,

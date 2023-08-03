@@ -13,9 +13,9 @@ import pandas as pd
 from ase.build import molecule
 from ase.io import read
 
-from pmutt import parse_formula
-from pmutt.io.vasp import set_vib_wavenumbers_from_outcar
-from pmutt.statmech import (EmptyMode, StatMech, elec, presets, rot,
+from sycamore.physics._pmutt import parse_formula
+from sycamore.physics._pmutt.io.vasp import set_vib_wavenumbers_from_outcar
+from sycamore.physics._pmutt.statmech import (EmptyMode, StatMech, elec, presets, rot,
                             trans, vib, lsr)
 
 

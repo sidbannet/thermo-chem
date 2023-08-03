@@ -9,8 +9,8 @@ from datetime import datetime
 
 import numpy as np
 
-from pmutt import pmutt_list_to_dict
-from pmutt.empirical.nasa import Nasa
+from sycamore.physics._pmutt import pmutt_list_to_dict
+from sycamore.physics._pmutt.empirical.nasa import Nasa
 
 
 def read_thermdat(filename, format='list', key='name'):

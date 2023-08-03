@@ -10,10 +10,10 @@ import inspect
 import numpy as np
 from matplotlib import pyplot as plt
 
-from pmutt import plot_1D
-from pmutt import constants as c
-from pmutt.io.json import json_to_pmutt, remove_class
-from pmutt import (_is_iterable, _ModelBase, _pmuttBase, _check_obj,
+from sycamore.physics._pmutt import plot_1D
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics._pmutt import (_is_iterable, _ModelBase, _pmuttBase, _check_obj,
                    _check_iterable_attr)
 
 

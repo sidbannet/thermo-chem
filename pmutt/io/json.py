@@ -55,22 +55,22 @@ def type_to_class(class_str):
     # Although it is usually inadvisible to import functions within a function,
     # this was done purposefully. Importing outside the function caused
     # circular import errors. This way the imports are limited to the function.
-    from pmutt.eos import IdealGasEOS, vanDerWaalsEOS
-    from pmutt.reaction import Reaction, Reactions
-    from pmutt.reaction.bep import BEP
-    from pmutt.empirical import EmpiricalBase, GasPressureAdj
-    from pmutt.empirical.nasa import Nasa, SingleNasa9, Nasa9
-    from pmutt.empirical.shomate import Shomate
-    from pmutt.empirical.references import Reference, References
-    from pmutt.empirical.zacros import Zacros
-    from pmutt.statmech import StatMech, EmptyMode
-    from pmutt.statmech.trans import FreeTrans
-    from pmutt.statmech.vib import HarmonicVib, QRRHOVib, EinsteinVib, DebyeVib
-    from pmutt.statmech.rot import RigidRotor
-    from pmutt.statmech.elec import GroundStateElec
-    from pmutt.statmech.nucl import EmptyNucl
-    from pmutt.mixture.cov import PiecewiseCovEffect
-    from pmutt.chemkin import CatSite
+    from sycamore.physics._pmutt.eos import IdealGasEOS, vanDerWaalsEOS
+    from sycamore.physics._pmutt.reaction import Reaction, Reactions
+    from sycamore.physics._pmutt.reaction.bep import BEP
+    from sycamore.physics._pmutt.empirical import EmpiricalBase, GasPressureAdj
+    from sycamore.physics._pmutt.empirical.nasa import Nasa, SingleNasa9, Nasa9
+    from sycamore.physics._pmutt.empirical.shomate import Shomate
+    from sycamore.physics._pmutt.empirical.references import Reference, References
+    from sycamore.physics._pmutt.empirical.zacros import Zacros
+    from sycamore.physics._pmutt.statmech import StatMech, EmptyMode
+    from sycamore.physics._pmutt.statmech.trans import FreeTrans
+    from sycamore.physics._pmutt.statmech.vib import HarmonicVib, QRRHOVib, EinsteinVib, DebyeVib
+    from sycamore.physics._pmutt.statmech.rot import RigidRotor
+    from sycamore.physics._pmutt.statmech.elec import GroundStateElec
+    from sycamore.physics._pmutt.statmech.nucl import EmptyNucl
+    from sycamore.physics._pmutt.mixture.cov import PiecewiseCovEffect
+    from sycamore.physics._pmutt.chemkin import CatSite
 
     type_to_class_dict = {
         "<class 'pmutt.eos.IdealGasEOS'>": IdealGasEOS,

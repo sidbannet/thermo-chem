@@ -2,9 +2,9 @@ from scipy.optimize import minimize
 import numpy as np
 import sys
 from itertools import repeat
-from pmutt.io.thermdat import read_thermdat
-from pmutt import pmutt_list_to_dict
-from pmutt import constants as c
+from sycamore.physics._pmutt.io.thermdat import read_thermdat
+from sycamore.physics._pmutt import pmutt_list_to_dict
+from sycamore.physics._pmutt import constants as c
 from collections import namedtuple
 
 

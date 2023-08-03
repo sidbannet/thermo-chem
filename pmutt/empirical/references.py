@@ -10,10 +10,10 @@ from warnings import warn
 
 import numpy as np
 
-from pmutt import _ModelBase
-from pmutt import constants as c
-from pmutt.empirical import EmpiricalBase
-from pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics._pmutt import _ModelBase
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.empirical import EmpiricalBase
+from sycamore.physics._pmutt.io.json import json_to_pmutt, remove_class
 
 
 class Reference(EmpiricalBase):

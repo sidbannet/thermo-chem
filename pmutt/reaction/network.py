@@ -8,8 +8,8 @@ import pygal
 from matplotlib import pyplot as plt
 from scipy import interpolate
 
-from pmutt import _force_pass_arguments, _get_specie_kwargs, _is_iterable
-from pmutt.reaction import (Reactions, _parse_reaction_state,
+from sycamore.physics._pmutt import _force_pass_arguments, _get_specie_kwargs, _is_iterable
+from sycamore.physics._pmutt.reaction import (Reactions, _parse_reaction_state,
                             _write_reaction_state)
 
 

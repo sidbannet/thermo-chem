@@ -1,6 +1,6 @@
 import os
 import unittest
-from pmutt.io import vasp
+from sycamore.physics._pmutt.io import vasp
 
 
 class TestVasp(unittest.TestCase):

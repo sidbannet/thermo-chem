@@ -10,10 +10,10 @@ from warnings import warn
 
 import numpy as np
 
-from pmutt import _force_pass_arguments
-from pmutt import constants as c
-from pmutt import pmutt_list_to_dict
-from pmutt.io import _get_file_timestamp
+from sycamore.physics._pmutt import _force_pass_arguments
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import pmutt_list_to_dict
+from sycamore.physics._pmutt.io import _get_file_timestamp
 
 
 def read_reactions(filename, species=None):

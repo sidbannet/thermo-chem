@@ -7,9 +7,9 @@ Created on Tues Jul 10 12:40:00 2018
 
 import numpy as np
 
-from pmutt import _pmuttBase
-from pmutt import constants as c
-from pmutt.io.json import remove_class
+from sycamore.physics._pmutt import _pmuttBase
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.io.json import remove_class
 
 
 class IdealGasEOS(_pmuttBase):

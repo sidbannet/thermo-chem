@@ -11,12 +11,12 @@ from warnings import warn
 import numpy as np
 from scipy.optimize import curve_fit
 
-from pmutt import _get_R_adj, _is_iterable
-from pmutt import constants as c
-from pmutt.empirical import EmpiricalBase
-from pmutt.io.cantera import obj_to_cti
-from pmutt.io.json import json_to_pmutt, remove_class
-from pmutt.mixture import _get_mix_quantity
+from sycamore.physics._pmutt import _get_R_adj, _is_iterable
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt.empirical import EmpiricalBase
+from sycamore.physics._pmutt.io.cantera import obj_to_cti
+from sycamore.physics._pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics._pmutt.mixture import _get_mix_quantity
 
 
 class Shomate(EmpiricalBase):

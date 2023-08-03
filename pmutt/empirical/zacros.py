@@ -7,15 +7,15 @@ Operations related to the Zacros wrapper
 
 import numpy as np
 
-from pmutt import constants as c
-from pmutt import get_molecular_weight as mw
-from pmutt.empirical import EmpiricalBase
-from pmutt.io.json import json_to_pmutt, remove_class
+from sycamore.physics._pmutt import constants as c
+from sycamore.physics._pmutt import get_molecular_weight as mw
+from sycamore.physics._pmutt.empirical import EmpiricalBase
+from sycamore.physics._pmutt.io.json import json_to_pmutt, remove_class
 
 
 class Zacros(EmpiricalBase):
     """Stores the information for an individual nasa specie
-    Inherits from pmutt.empirical.EmpiricalBase
+    Inherits from sycamore.physics._pmutt.empirical.EmpiricalBase
     """
     def __init__(self,
                  A_st=None,

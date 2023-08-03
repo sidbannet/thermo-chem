@@ -6,7 +6,7 @@ Read from/write to databases
 """
 
 from pymongo import MongoClient
-from pmutt.io.json import json_to_pmutt
+from sycamore.physics._pmutt.io.json import json_to_pmutt
 
 
 class PMRester:

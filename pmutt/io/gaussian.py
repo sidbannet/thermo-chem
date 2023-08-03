@@ -1,6 +1,6 @@
 import re
 
-from pmutt import constants as c
+from sycamore.physics._pmutt import constants as c
 
 
 def read_pattern(filename, pattern, group=0, return_immediately=True):

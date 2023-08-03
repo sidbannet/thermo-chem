@@ -3,15 +3,15 @@ from collections import defaultdict
 
 import yaml
 
-from pmutt import _force_pass_arguments, _is_iterable, pmutt_list_to_dict
-from pmutt.io import _get_file_timestamp
-from pmutt.io.cantera import obj_to_cti
-from pmutt.io.ctml_writer import convert
-from pmutt.cantera.phase import IdealGas, StoichSolid
-from pmutt.omkm import _Param, _assign_yaml_val
-from pmutt.omkm.phase import InteractingInterface
-from pmutt.omkm import phase as omkm_phases
-from pmutt.omkm.units import Units
+from sycamore.physics._pmutt import _force_pass_arguments, _is_iterable, pmutt_list_to_dict
+from sycamore.physics._pmutt.io import _get_file_timestamp
+from sycamore.physics._pmutt.io.cantera import obj_to_cti
+from sycamore.physics._pmutt.io.ctml_writer import convert
+from sycamore.physics._pmutt.cantera.phase import IdealGas, StoichSolid
+from sycamore.physics._pmutt.omkm import _Param, _assign_yaml_val
+from sycamore.physics._pmutt.omkm.phase import InteractingInterface
+from sycamore.physics._pmutt.omkm import phase as omkm_phases
+from sycamore.physics._pmutt.omkm.units import Units
 
 
 def write_cti(phases=None,
